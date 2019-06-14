@@ -4,7 +4,7 @@ var count=0;
 var intervalId;
 
 $("#start").click(startSlideShow);
-$("#stop").click(stop);
+$("#stop").click(stopSlideShow);
 
 function displayShow(){
     
@@ -26,6 +26,12 @@ function nextImage(){
    if(count==image.length){
        count=0;
    }
+
+}
+
+function stopSlideShow(){
+
+clearInterval(intervalId);
 
 }
  
